@@ -37,12 +37,13 @@ display: flex;
     align-items: center;
 }
 #fvp .fvp_right a{
-    text-transform: uppercase;
+text-transform: uppercase;
     text-decoration: none;
+    width: 129px;
     color: white;
     font-size: 13px;
     font-weight: 600;
-    padding: 0px 15px;
+    padding: 0px 0px;
 }
 #fvp .fvp_right .svg{
     width: 40px;
@@ -97,7 +98,7 @@ display: flex;
     color: white;
 }
 .landing_page_txt h2{
-    font-size: 55px;
+    font-size: 53px;
     font-weight: 700;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 60px;
@@ -171,6 +172,8 @@ nav .menu div{
     justify-content: center;
     align-items: center;
     margin: 30px;
+    width: 100%;
+    overflow: hidden;
 }
 nav p svg{
     width: 15px;
@@ -229,7 +232,7 @@ nav .activeMenuImg::after{
 
 /* /// card */
 .card{
-    width: 400px;
+    width: 30%;
     height: 200px;
     background-color: white;
     display: flex;
@@ -283,10 +286,10 @@ nav .activeMenuImg::after{
     bottom: 0;
 }
 .card-4{
-    width: 600px;
+    width: 45%;
 }
 .card-5{
-    width: 600px;
+    width: 45%;
 }
 .card-4 img,.card-5 img{
     width: 160px;
@@ -314,19 +317,19 @@ nav .activeMenuImg::after{
 }
 #mobile-app .mobile-app-img{
     position: absolute;
-    width: 700px;
+    width: 44%;
     left: 100px;
-    top: -100px;
+    top: -75px;
     z-index: 100;
 }
 #mobile-app .right h2{
-    font-size: 33px;
+    font-size: 170%;
     margin-left: 15px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #mobile-app .images img{
-    width: 200px;
+    width: 49%;
 }
 
 
@@ -335,7 +338,7 @@ nav .activeMenuImg::after{
 /* // social and videos */
 
 #socialAndVideos{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     padding: 0px 5%;
     background-image: url(img/cream\ background.png);
@@ -373,7 +376,7 @@ nav .activeMenuImg::after{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 45%;
     background-color: white;
     border-radius: 10px;margin: 10px;
     box-shadow: rgb(255 129 0 / 24%) 1px 0px 20px 1px;
@@ -402,7 +405,7 @@ nav .activeMenuImg::after{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 200px;
+    width: 39%;
     background-color: white;
     border-radius: 10px;
     margin: 10px;
@@ -446,7 +449,7 @@ nav .activeMenuImg::after{
     padding: 10px 30px;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 25%;
     background-color: white;
     border-radius: 10px;
     margin: 10px;
@@ -587,15 +590,25 @@ nav .activeMenuImg::after{
 footer{
     background-color: rgb(71, 71, 71);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     padding: 30px 10%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 }
 footer img{
-    width: 500px;
-    height: 40vh;
+    width: 20%;
+        height: 50vh;
+        position: absolute;
+        right: 0;
+    }
+.footer-main-div{
+    /* width: 100%; */
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .footer-allLinks{
     display: flex;
@@ -615,9 +628,8 @@ footer img{
 }
 .copyright {
     display: flex;
-    align-items: center;
     font-size: 12px;
-    margin-top: 40px;
+    bottom: 0;
     color: white;
 }
 .devloper{
